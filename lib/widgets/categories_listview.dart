@@ -5,24 +5,33 @@ import 'package:news_app/widgets/category_card.dart';
 class CategoriesListview extends StatelessWidget {
   const CategoriesListview({super.key});
 
-  /*final List<Widget> cards = const [
-    CategoryCard(title: 'General', image: 'assets/technology.jpeg'),
-    CategoryCard(title: 'Business', image: 'assets/technology.jpeg'),
-    CategoryCard(title: 'Entertaiment', image: 'assets/technology.jpeg'),
-    CategoryCard(title: 'Health', image: 'assets/technology.jpeg'),
-    CategoryCard(title: 'Science', image: 'assets/technology.jpeg'),
-    CategoryCard(title: 'Sport', image: 'assets/technology.jpeg'),
-    CategoryCard(title: 'Technology', image: 'assets/technology.jpeg'),
-  ];*/
-
   final List<CategoryModel> categoriesList = const [
-    CategoryModel(title: 'General', image: 'assets/technology.jpeg'),
-    CategoryModel(title: 'Business', image: 'assets/technology.jpeg'),
-    CategoryModel(title: 'Entertaiment', image: 'assets/technology.jpeg'),
-    CategoryModel(title: 'Health', image: 'assets/technology.jpeg'),
-    CategoryModel(title: 'Science', image: 'assets/technology.jpeg'),
-    CategoryModel(title: 'Sport', image: 'assets/technology.jpeg'),
-    CategoryModel(title: 'Technology', image: 'assets/technology.jpeg'),
+    CategoryModel(
+        title: 'General',
+        image: 'assets/technology.jpeg',
+        categoryName: 'general'),
+    CategoryModel(
+        title: 'Business',
+        image: 'assets/technology.jpeg',
+        categoryName: 'business'),
+    CategoryModel(
+        title: 'Entertaiment',
+        image: 'assets/technology.jpeg',
+        categoryName: 'entertainment'),
+    CategoryModel(
+        title: 'Health',
+        image: 'assets/technology.jpeg',
+        categoryName: 'health'),
+    CategoryModel(
+        title: 'Science',
+        image: 'assets/technology.jpeg',
+        categoryName: 'science'),
+    CategoryModel(
+        title: 'Sport', image: 'assets/technology.jpeg', categoryName: 'sport'),
+    CategoryModel(
+        title: 'Technology',
+        image: 'assets/technology.jpeg',
+        categoryName: 'technology'),
   ];
 
   @override
@@ -33,7 +42,7 @@ class CategoriesListview extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemCount: categoriesList.length,
           itemBuilder: (context, index) {
-            return CategoryCard(categories: categoriesList[index]);
+            return CategoryCard(category: categoriesList[index]);
           }),
     );
   }
