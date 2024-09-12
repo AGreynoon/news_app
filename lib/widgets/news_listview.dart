@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/article_model.dart';
-import 'package:news_app/widgets/news_tile.dart';
+import 'package:news_app/widgets/news_card.dart';
 
 class NewsListview extends StatelessWidget {
   final List<ArticleModel> articles;
@@ -14,7 +14,9 @@ class NewsListview extends StatelessWidget {
           (context, index) {
         return Padding(
           padding: const EdgeInsets.only(bottom: 12),
-          child: NewsTile(articleModel: articles[index]),
+          child: NewsCard(
+            articleModel: articles[index],
+          ),
         );
       }),
     );

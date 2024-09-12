@@ -24,7 +24,6 @@ class _NewsListviewBuilderState extends State<NewsListviewBuilder> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<ArticleModel>>(
-        //is it possible to make newsService a static class?
         future: futureRequestedData,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
