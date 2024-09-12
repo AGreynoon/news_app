@@ -1,7 +1,7 @@
 class ArticleSource {
-  final String id;
-  final String name;
-  final String author;
+  final String? id;
+  final String? name;
+  final String? author;
 
   ArticleSource({required this.id, required this.name, required this.author});
 

@@ -49,14 +49,9 @@ class NewsCard extends StatelessWidget {
               maxLines: 2,
               style: const TextStyle(color: Colors.grey, fontSize: 14),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text(articleModel.publishedAt),
-                Text(articleModel.articleSource.name),
-                Text(articleModel.articleSource.author),
-              ],
-            ),
+            Text(articleModel.publishedAt ?? 'unknown'),
+            Text(articleModel.articleSource.name ?? 'unknown'),
+            Text(articleModel.articleSource.author ?? 'unknown'),
           ],
         ),
       ),

@@ -5,7 +5,7 @@ class ArticleModel {
   final String title;
   final String? subtitle;
   final String url;
-  final String publishedAt;
+  final String? publishedAt;
   final ArticleSource articleSource;
 
   ArticleModel(
