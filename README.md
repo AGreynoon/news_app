@@ -4,6 +4,8 @@
 
 ## Table of contents
 * [General info](#general-info)
+* [Features](#features)
+* [Future updates](#future-updates)
 * [Screenshots](#screenshots)
 * [Learnings](#learnings)
 * [Installation](#installation)
@@ -15,6 +17,12 @@
 This is a simple Flutter application implementing a Flutter basics by doing Section 11. News app, in which is a part of the 
 ![Complete Flutter & Dart Development Course Arabic]([https://www.udemy.com/course/best-and-complete-flutter-course-for-beginners/?couponCode=KEEPLEARNING]) by ![Tharwat Samy](https://www.linkedin.com/in/tharwat-samy-363aa7177/).
 
+## Features
+### Before improvements
+
+### After improvements
+
+## Future updates
 
 ## Screenshots
 
